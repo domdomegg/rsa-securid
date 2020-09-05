@@ -64,6 +64,7 @@ export const computeCode = (token: Token, pin?: string | number, date: Date = ne
         code
     };
 }
+export default computeCode;
 
 const keyFromBcdTime = (token: Token, timeBcd: Buffer, byteCount: number) => {
     // initialize with 0

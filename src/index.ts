@@ -1,7 +1,8 @@
 import v2 from './v2'
 import v3 from './v3'
 import deviceId from './deviceId';
-export { v2, v3, deviceId };
+import computeCode from './code';
+export { v2, v3, deviceId, computeCode };
 
 export interface Token {
     version: 2 | 3,
