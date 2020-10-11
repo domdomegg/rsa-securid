@@ -20,4 +20,8 @@ console.log(token2.computeCode('1234'));
 
 ## 📦 Publishing
 
-`npm run publish` will build and publish the library
+Versions follow the [semantic versioning spec](https://semver.org/).
+
+Use `npm version <major | minor | patch>` to bump the version, then push to master.
+
+Ensure you have set follow tags option to true with `git config --global push.followTags true`. GitHub actions will then pick it up and handle the actual publishing to the NPM registry.
