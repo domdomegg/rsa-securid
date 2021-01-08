@@ -1,6 +1,6 @@
 {
     "name": "rsa-securid",
-    "version": "2.0.7",
+    "version": "2.0.8",
     "description": "Node.js RSA SecurID-compatible token library",
     "license": "LGPL-2.1-or-later",
     "author": "Adam Jones (domdomegg)",
