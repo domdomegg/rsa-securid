@@ -68,7 +68,7 @@ const parse = (rawToken: string) => {
     if (typeof rawToken != "string") throw new Error('Token must be a string') 
     if (!rawToken) throw new Error('Falsy token not allowed')
 
-    const token = rawToken.replace(/\D/g, '');
+    const token = rawToken.replace('127.0.0.1', '').replace(/\D/g, '');
 
     if (token.length < 81) throw new Error('Token too short')
     if (token.length > 85) throw new Error('Token too long')

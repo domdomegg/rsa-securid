@@ -14,6 +14,20 @@ it('test token 1', () => {
     expect(token.computeCode('1234', new Date(Date.UTC(2020, 6, 14, 17, 19))).code).toBe('67905799');
 });
 
+it('test token 1', () => {
+    const token = v2('http://127.0.0.1/securid/ctf?ctfData=268761584121121501057537215301771044751053314520620437364173136510454342716753365');
+    
+    expect(token.computeCode('1234', new Date(Date.UTC(2020, 6, 28, 18, 5))).code).toBe('31478955');
+    expect(token.computeCode('1234', new Date(Date.UTC(2020, 6, 13, 22, 42))).code).toBe('99423625');
+    expect(token.computeCode('1234', new Date(Date.UTC(2020, 6, 14, 17, 15))).code).toBe('32554647');
+    expect(token.computeCode('0000', new Date(Date.UTC(2020, 6, 14, 17, 15))).code).toBe('32553413');
+    expect(token.computeCode('1234', new Date(Date.UTC(2020, 6, 14, 17, 16))).code).toBe('22721590');
+    expect(token.computeCode('1235', new Date(Date.UTC(2020, 6, 14, 17, 16))).code).toBe('22721591');
+    expect(token.computeCode('12345678', new Date(Date.UTC(2020, 6, 14, 17, 16))).code).toBe('34065934');
+    expect(token.computeCode('1234', new Date(Date.UTC(2020, 6, 14, 17, 17))).code).toBe('25765781');
+    expect(token.computeCode('1234', new Date(Date.UTC(2020, 6, 14, 17, 19))).code).toBe('67905799');
+});
+
 it('test token 2', () => {
     const token = v2('265718421982147620421361233751302667731732163701346667424173135550032152716723337');
 

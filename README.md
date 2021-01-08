@@ -2,6 +2,8 @@
 
 Lightweight TypeScript library for generating RSA SecurID tokens
 
+NB: This is an unofficial hobby project, and is in no way affiliated with or endorsed by RSA Security. Use at your own risk.
+
 Derived from the brilliant [stoken](https://github.com/cernekee/stoken)
 
 Produces codes like:
