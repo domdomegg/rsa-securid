@@ -3,12 +3,12 @@
         "module": "commonjs",
         "strict": true,
         "outDir": "dist",
-        "rootDirs": [
-            "src",
-            "test"
-        ],
+        "rootDir": "src",
         "declaration": true,
-        "esModuleInterop": true
+        "esModuleInterop": true,
+        "types": [
+            "node"
+        ]
     },
     "include": [
         "src/**/*.ts"
